@@ -1,4 +1,4 @@
-$(function() {
+// $(function() {
 	// スムーススクロール
 	// jQuery('a[href^="#"]').click(function () {
 	// 	let header = jQuery(".header").innerHeight();
@@ -51,4 +51,4 @@ jQuery(".to-top").click(function () {
 	// 		jQuery('body').attr('data-scroll', 'false');
 	// 	}
 	// });
-})
+// })

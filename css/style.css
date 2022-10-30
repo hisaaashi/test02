@@ -33,7 +33,7 @@ h1 {
   display: none;
   z-index: 10;
 }
-.to-top.is-show {
+[data-scroll=true] .to-top {
   display: block;
 }
 .to-top a:hover {

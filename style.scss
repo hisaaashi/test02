@@ -39,7 +39,7 @@ h1 {
 	display: none;
 	z-index: 10;
 	
-	&.is-show {
+	[data-scroll='true'] & {
 		// opacity: 1;
 		// visibility: visible;
 		display: block;

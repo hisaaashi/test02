@@ -1,18 +1,6 @@
-/* ===============================================
-# mixins
-=============================================== */
-body {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.5;
-  background: beige;
-  -webkit-text-size-adjust: 100%;
-}
-
 .header {
   background-color: tomato;
   height: 70px;
-  width: 100%;
 }
 
 h1 {
@@ -45,12 +33,6 @@ h1 {
   opacity: 0;
   visibility: hidden;
   z-index: 10;
-}
-@media screen and (max-width: 767px) {
-  .to-top {
-    right: 16px;
-    bottom: 14px;
-  }
 }
 .to-top.is-show {
   opacity: 1;

@@ -1,37 +1,8 @@
 @charset "utf-8";
 
-/* ===============================================
-# mixins
-=============================================== */
-// ブレークポイント
-$layout-width-inner: 1200px;
-
-$breakpoints: (
-	'sp': "screen and (max-width: 767px)",
-	'tab': "screen and (min-width: 768px) and (max-width: #{$layout-width-inner - 1px})",
-	'pc': "screen and (min-width: #{$layout-width-inner})"
-)!default;
-
-
-// メディアクエリー
-@mixin mq($breakpoint: sp) {
-	@media #{map-get($breakpoints, $breakpoint)} {
-		@content;
-	}
-}
-
-body {
-	font-size: 16px;
-  color: #333;
-  line-height: (24 / 16);
-	background: beige;
-	-webkit-text-size-adjust: 100%;
-}
-
 .header {
 	background-color: tomato;
 	height: 70px;
-	width: 100%;
 }
 
 h1 {
@@ -66,11 +37,6 @@ h1 {
 	opacity: 0;
 	visibility: hidden;
 	z-index: 10;
-
-	@include mq('sp') {
-		right: 16px;
-		bottom: 14px;
-	}
 	
 	&.is-show {
 		opacity: 1;

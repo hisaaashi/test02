@@ -16,7 +16,7 @@ h1 {
 }
 
 .sec02 {
-	background-color: #3E3E3E;
+	background-color: pink;
 	height: 1200px;
 }
 
@@ -34,22 +34,22 @@ h1 {
 	position: fixed;
 	right: 40px;
 	bottom: 40px;
-	// opacity: 0;
-	// visibility: hidden;
-	display: none;
+	opacity: 0;
+	visibility: hidden;
+	// display: none;
 	z-index: 10;
+	transition: all .3s ease 0s;
 	
 	[data-scroll='true'] & {
-		// opacity: 1;
-		// visibility: visible;
-		display: block;
+		opacity: 1;
+		visibility: visible;
+		// display: block;
 	}
 	
 	a {
 
 		&:hover {
-			opacity: .7;
-			transition: all .3s ease 0s;
+			// opacity: .7;
 		}
 
 		img {

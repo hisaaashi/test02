@@ -34,23 +34,18 @@ h1 {
 	position: fixed;
 	right: 40px;
 	bottom: 40px;
-	opacity: 0;
-	visibility: hidden;
+	// opacity: 0;
+	// visibility: hidden;
+	display: none;
 	z-index: 10;
 	
 	&.is-show {
-		opacity: 1;
-		visibility: visible;
+		// opacity: 1;
+		// visibility: visible;
+		display: block;
 	}
 	
 	a {
-		background-color: #fff;
-		color: #333;
-		height: 48px;
-		width: 48px;
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
 
 		&:hover {
 			opacity: .7;

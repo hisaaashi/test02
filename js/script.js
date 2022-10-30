@@ -1,38 +1,43 @@
 $(function() {
-  // #から始まるURLがクリックされた時
-  jQuery('a[href^="#"]').click(function() {
-    // .headerクラスがついた要素の高さを取得
-    let header = jQuery(".header").innerHeight();
-    let speed = 300;
-    let id = jQuery(this).attr("href");
-    let target = jQuery("#" == id ? "html" : id);
-    // トップからの距離からヘッダー分の高さを引く
-    let position = jQuery(target).offset().top - header;
-     if ("fixed" !== jQuery(".js-header").css("position")) {
-    position = jQuery(target).offset().top;
-  }
-  if (0 > position) {
-    position = 0;
-  }
-    // その分だけ移動すればヘッダーと被りません
-    jQuery("html, body").animate(
-      {
-        scrollTop: position
-      },
-      speed
-    );
-    return false;
-  });
+	// スムーススクロール
+	jQuery('a[href^="#"]').click(function () {
+		let header = jQuery(".header").innerHeight();
+		let speed = 300;
+		let id = jQuery(this).attr("href");
+		let target = jQuery("#" == id ? "html" : id);
+		let position = jQuery(target).offset().top - header;
+		if ("fixed" !== jQuery(".header").css("position")) {
+			position = jQuery(target).offset().top;
+		}
+		if (0 > position) {
+			position = 0;
+		}
+		jQuery("html, body").animate(
+			{
+				scrollTop: position,
+			},
+			speed
+		);
+		return false;
+	});
 
-  // スクロール検知
-  jQuery(window).on("scroll", function() {
-    // トップから100px以上スクロールしたら
-    if (100 < jQuery(this).scrollTop()) {
-      // is-showクラスをつける
-  jQuery('.to-top').addClass( 'is-show' );
-    } else {
-      // 100pxを下回ったらis-showクラスを削除
-    jQuery('.to-top').removeClass( 'is-show' );
-    }
-  });
+	// トップへ戻る
+	jQuery(".to-top").click(function () {
+		jQuery("body,html").animate(
+			{
+				scrollTop: 0,
+			},
+			300
+		);
+		return false;
+	});
+
+	// スクロール検知
+	jQuery(window).on("scroll", function () {
+		if (100 < jQuery(this).scrollTop()) {
+			jQuery(".to-top").addClass("is-show");
+		} else {
+			jQuery(".to-top").removeClass("is-show");
+		}
+	});
 })

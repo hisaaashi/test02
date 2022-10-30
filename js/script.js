@@ -33,11 +33,11 @@ $(function() {
 	// });
 
 	// スクロール検知
-	jQuery(window).on("scroll", function () {
-		if (100 < jQuery(this).scrollTop()) {
-			jQuery('body').attr('data-scroll', 'true');
-		} else {
-			jQuery('body').attr('data-scroll', 'false');
-		}
-	});
+	// jQuery(window).on("scroll", function () {
+	// 	if (100 < jQuery(this).scrollTop()) {
+	// 		jQuery('body').attr('data-scroll', 'true');
+	// 	} else {
+	// 		jQuery('body').attr('data-scroll', 'false');
+	// 	}
+	// });
 })

@@ -3,121 +3,42 @@
 /*==========================================================================
 # reset - ブラウザの差異や不要なスタイルを無くすためのスタイル
 ========================================================================== */
-*,
-*::before,
-*::after {
+* {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td, small, button, time, figure {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
   margin: 0;
   padding: 0;
+  vertical-align: baseline;
 }
 
-body {
-  min-height: 100vh;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #333;
-  line-height: 1.5;
-  background: #fff;
-  overflow-x: hidden;
-  overflow-wrap: break-word;
+html {
+  line-height: 1;
 }
 
-article,
-aside,
-footer,
-header,
-nav,
-section,
-main {
+ol, ul {
+  list-style: none;
+}
+
+li, dd {
+  list-style-type: none;
+}
+
+header, footer, nav, section, article, aside, figure, figcaption {
   display: block;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p,
-span,
-em,
-small,
-strong,
-sub,
-sup,
-mark,
-del,
-ins,
-strike,
-abbr,
-dfn,
-blockquote,
-q,
-cite,
-code,
-pre,
-ol,
-ul,
-li,
-dl,
-dt,
-dd,
-div,
-section,
-article,
-main,
-aside,
-nav,
-header,
-hgroup,
-footer,
-img,
-figure,
-figcaption,
-address,
-time,
-audio,
-video,
-canvas,
-iframe,
-details,
-summary,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-  margin: 0;
-  padding: 0;
-  border: 0;
+img {
+  border: none;
+  vertical-align: bottom;
 }
 
 a {
-  color: inherit;
+  cursor: pointer;
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border: none;
-  vertical-align: top;
-}
-
-ul,
-ol {
-  list-style: none;
 }

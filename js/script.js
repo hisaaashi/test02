@@ -22,15 +22,15 @@ $(function() {
 	});
 
 	// トップへ戻る
-	jQuery(".to-top").click(function () {
-		jQuery("body,html").animate(
-			{
-				scrollTop: 0,
-			},
-			300
-		);
-		return false;
-	});
+	// jQuery(".to-top").click(function () {
+	// 	jQuery("body,html").animate(
+	// 		{
+	// 			scrollTop: 0,
+	// 		},
+	// 		300
+	// 	);
+	// 	return false;
+	// });
 
 	// スクロール検知
 	jQuery(window).on("scroll", function () {

@@ -18,7 +18,6 @@ $(function() {
     return false;
   });
 
-
   // スクロール検知
   jQuery(window).on("scroll", function() {
     // トップから100px以上スクロールしたら

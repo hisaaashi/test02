@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>テストサイト</title>
-		<!-- reset css -->
-		<link rel="stylesheet" href="css/reset.css">
-		<!-- original -->
-		<link rel="stylesheet" href="css/style.css">
+	<title>toTop</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<header class="header">
-		<h1>テストサイト</h1>
+	<header class="header js-header">
+		<ul class="header-nav">
+			<li class="header-nav-item"><a href="#sec1">sec1</a></li>
+			<li class="header-nav-item"><a href="#sec2">sec2</a></li>
+			<li class="header-nav-item"><a href="#sec3">sec3</a></li>
+			<li class="header-nav-item"><a href="#sec4">sec4</a></li>
+		</ul>
 	</header>
-	
+
 	<main>
-		<section class="sec01">
-			セクション１
-		</section>
-		<section class="sec02">
-			セクション２
-		</section>
-		<section class="sec03">
-			セクション３
-		</section>
+		<section id="sec1" class="section">セクション1</section>
+		<section id="sec2" class="section">セクション2</section>
+		<section id="sec3" class="section">セクション3</section>
+		<section id="sec4" class="section">セクション4</section>
 	</main>
 
-	<footer class="footer">
-		<div class="to-top"><a href="#"><img src="img/totop.svg" alt="to-top"></a></div>
-	</footer>
-	
+	<footer class="footer">フッター</footer>
+	<a href="#" class="toTop js-top">top</a>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
+
 </html>

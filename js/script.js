@@ -1,4 +1,4 @@
-// $(function() {
+$(function() {
   // #から始まるURLがクリックされた時
   jQuery('a[href^="#"]').click(function() {
     // .headerクラスがついた要素の高さを取得
@@ -29,4 +29,4 @@
     jQuery('.to-top').removeClass( 'is-show' );
     }
   });
-// });
+});

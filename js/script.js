@@ -29,4 +29,4 @@ $(function() {
     jQuery('.to-top').removeClass( 'is-show' );
     }
   });
-});
+})

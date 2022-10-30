@@ -1,3 +1,4 @@
+$(function() {
 // スムーススクロール
 jQuery('a[href^="#"]').click(function () {
   let header = jQuery(".js-header").innerHeight();
@@ -39,3 +40,5 @@ jQuery(window).on("scroll", function () {
     jQuery(".js-top").removeClass("is-show");
   }
 });
+
+})

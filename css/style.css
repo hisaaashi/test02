@@ -1,0 +1,65 @@
+/* ===============================================
+# mixins
+=============================================== */
+body {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  background: beige;
+  -webkit-text-size-adjust: 100%;
+}
+
+.header {
+  background-color: tomato;
+  height: 70px;
+  width: 100%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.sec01 {
+  background-color: #e3e3e3;
+  height: 1200px;
+}
+
+.sec02 {
+  background-color: #3E3E3E;
+  height: 1200px;
+}
+
+.sec03 {
+  background-color: rgba(59, 105, 255, 0.2);
+  height: 1200px;
+}
+
+/* ===============================================
+# to-top
+=============================================== */
+.to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+@media screen and (max-width: 767px) {
+  .to-top {
+    right: 16px;
+    bottom: 14px;
+  }
+}
+.to-top.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.to-top a:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease 0s;
+}
+.to-top a img {
+  width: 48px;
+}

@@ -148,22 +148,19 @@ section {
   height: 600px;
   display: flex;
   justify-content: center;
+  /* align-items: center; */
   font-size: 30px;
   font-weight: 700;
 }
-
 section:first-of-type {
   background: rgb(253, 217, 217);
 }
-
 section:nth-of-type(2) {
   background: rgb(128, 251, 192);
 }
-
 section:nth-of-type(3) {
   background: rgb(226, 251, 128);
 }
-
 section:last-of-type {
   background: rgb(148, 130, 250);
 }
@@ -195,7 +192,6 @@ section:last-of-type {
   border: 2px solid #fff;
   display: none;
 }
-
 .toTop.is-show {
   display: flex;
 }

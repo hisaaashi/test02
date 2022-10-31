@@ -1,0 +1,120 @@
+// リセットCSS
+//--------------------------
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5;
+  background: #fff;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+del,
+ins,
+strike,
+abbr,
+dfn,
+blockquote,
+q,
+cite,
+code,
+pre,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+section,
+article,
+main,
+aside,
+nav,
+header,
+hgroup,
+footer,
+img,
+figure,
+figcaption,
+address,
+time,
+audio,
+video,
+canvas,
+iframe,
+details,
+summary,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: top;
+}
+
+ul,
+ol {
+  list-style: none;
+}
